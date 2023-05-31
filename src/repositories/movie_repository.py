@@ -7,11 +7,11 @@ class MovieRepository:
         # In memory database which is a simple list of movies
         self._db: list[Movie] = []
 
-    def get_all_movies(self) -> list[Movie]:
+    def get_all_movies(self):
         # Simply return all movies from the in-memory database
         return self._db
 
-    def get_movie_by_title(self, title: str) -> Movie | None:
+    def get_movie_by_title(self, title: str) -> Movie:
         # Perform a linear search through the in-memory database
         for movie in self._db:
             # If the movie title matches, return the movie

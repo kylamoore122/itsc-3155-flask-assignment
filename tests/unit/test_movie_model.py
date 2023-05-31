@@ -1,4 +1,4 @@
-from src.models.movie import Movie
+
 
 
 def test_movie_model():
